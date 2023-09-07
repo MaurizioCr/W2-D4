@@ -44,18 +44,16 @@ console.log (crazySum(a1, b1))
 // const crazyDiff = function ()
 /* SCRIVI QUI LA TUA RISPOSTA */
 const crazyDiff = function (p1) {
-    Math.abs(p1-19)
+    let result = Math.abs(p1-19)
     if(p1>19){
-        let result = (p1-19) *3
-        return result
+        return result *3
     }
     else{
-        result = 19-p1
         return result
     }
 
 }
-const p2 = parseInt(prompt("Inserisci il primo valore"))
+const p2 = parseInt(prompt("Inserisci un valore"))
 
 console.log (p2);
 console.log (crazyDiff(p2))
@@ -84,16 +82,19 @@ console.log (boundary(n1))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// const epify = function(string){
+const epify = function(string){
     
-//     if (epify !== "EPICODE") {
+    if (string !== "EPICODE") {
+    //if (!string.startWith("EPICODE"))
+    //if (string.slice (0, 8) === "EPICODE")
         
-//         return 
-//     }
-//     else{
-//     }
+        return "EPICODE" + string 
+    }
+    else{
+        return string
+    }
       
-// }
+}
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -118,7 +119,10 @@ console.log(check3and7(x1))
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
-// const reverseString = function 
+const reverseString = function (str) {
+    return str.split("").reverse().join("");
+
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -137,8 +141,8 @@ console.log(check3and7(x1))
 /* SCRIVI QUI LA TUA RISPOSTA */
 const cutString = function (stringa){
     stringa.slice(0)
-    stringa.slice(stringa.length)
-
+    stringa.slice(stringa.length -1)
+    console.log(stringa)
 }
 const stringa1 = (prompt("Inserisci il testo"))
     console.log (stringa1);
