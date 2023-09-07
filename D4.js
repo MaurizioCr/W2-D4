@@ -140,9 +140,9 @@ const reverseString = function (str) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const cutString = function (stringa){
-    stringa.slice(0)
-    stringa.slice(stringa.length -1)
-    console.log(stringa)
+    result = stringa.slice(0)
+    result = stringa.slice(0, stringa.length-1)
+    return result
 }
 const stringa1 = (prompt("Inserisci il testo"))
     console.log (stringa1);
@@ -156,7 +156,7 @@ const stringa1 = (prompt("Inserisci il testo"))
 const giveMeRandom = function(n){
     const randomNumber = []
     for (let i=0; i<n; i++){
-        randomNumber.push(Math.floor(Math.random()*10))
+        randomNumber.push(Math.floor(Math.random()*11))
     }
     return randomNumber
     }
